@@ -6,5 +6,7 @@ const name = "Dũng";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-    React.createElement("h1", { style: { textAlign: "center" } }, name)
+    <h1 style={{ textAlign: "center" }}>
+        { name }
+    </h1>
 );
