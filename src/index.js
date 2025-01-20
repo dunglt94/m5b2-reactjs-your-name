@@ -32,3 +32,16 @@ root1.render(
         </ul>
     </div>
 );
+
+const root2 = ReactDOM.createRoot(document.getElementById("root2"));
+
+const tick = () => {
+    root2.render(
+        <div style={{ textAlign: "center" }}>
+            <h1>Hello, {name}!</h1>
+            <h2>Bây giờ là: {new Date().toLocaleTimeString()}.</h2>
+        </div>
+    );
+};
+
+setInterval(tick, 1000);
